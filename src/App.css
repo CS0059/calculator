@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color-secondary);
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid var(--border-color);
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  grid-template-rows: repeat(5, 80px);
+  gap: 10px;
+}
+
+.button {
+  width: 80px;
+  height: 80px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button.empty {
+  background-color: transparent;
+  cursor: default;
+}
+
+.button.primary {
+  background-color: var(--btn-accent-color);
+  color: var(--text-color);
+}
+
+.button.primary:hover {
+  background-color: var(--btn-accent-color-hover);
+}
+
+.button.secondary {
+  background-color: var(--btn-color);
+  color: var(--btn-accent-color);
+}
+
+.button:hover {
+  background-color: var(--btn-color-hover);
+}
+
+.display {
+  height: auto;
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  font-family: monospace;
+  font-size: 3rem;
+  color: white;
+  font-weight: 500;
+  text-align: right;
+  width: 100%;
+  user-select: text !important;
+}
+
+.display::selection {
+  background: var(--text-selection-bg);
+  color: var(--text-selection-color);
+}

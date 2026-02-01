@@ -1,0 +1,30 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+  -webkit-user-drag: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  --bg-color: #202020;
+  --bg-color-secondary: #2c2c2c;
+  --btn-color: #3b3b3b;
+  --btn-color-hover: #4c4c4c;
+  --btn-color-light: #5a5a5a;
+  --btn-color-light-hover: #6b6b6b;
+  --btn-accent-color: #ff9500;
+  --btn-accent-color-hover: #c57f0d;
+  --text-color: #ffffff;
+  --text-secondary-color: #a5a5a5;
+  --border-color: #3a3a3a;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg-color);
+}
